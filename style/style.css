@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+:root{
+     --primary-color:#047aed;
+     --secondary-color:#05767e;
+     --dark-color:#002240;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Nanum Myeongjo', sans-serif;
+    color: black;
+}
+
+h1, h2, h3, h4{
+    font-weight: 200;
+    line-height: 1.2;
+    margin:10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+/* navbar*/
+.navbar{
+    background-color:#054175;
+    color:#fff;
+    height:80px;
+}
+
+.navbar ul{
+display: flex;
+}
+
+.navbar ul a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size:20px;
+    display: inline-block;
+    
+    
+
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+
+}
+
+/* frontpage*/
+
+.frontpage{
+    height: 500px;
+    background-color: rgb(230, 127, 10);
+    color: #fff;
+    position: relative;
+}
+
+.frontpage h1{
+    font-size: 40px;
+}
+
+.frontpage p{
+    margin: 20px 0;
+}
+
+.frontpage .grid{
+    overflow: visible;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+
+}
+
+
+.frontpage::before,
+.frontpage::after{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background:#fff;
+}
+
+
+
+.education-skills{
+    height: 600px;
+    background-color: rgb(2, 117, 126);
+    color: #fff;
+    position: relative; 
+}
+
+.education-skills h1{
+font-size:30px;
+}
+.education-skills h2{
+    font-size: 20px;
+    }
+
+.education-skills .grid{
+    overflow: visible;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin:auto;
+}
+
+.education-skills .grid .education-text .skills-list .ex:hover{
+    border-bottom: 2px #fff solid;
+}
+
+
+ .experience-list{
+   padding: 15px 0;
+}
+
+
+/* language*/
+.languages{
+    height: 250px;
+    width: 100%;
+    color: black;
+    background-color: rgb(1, 68, 40);
+    align-self: center;
+    align-content: center;
+    
+    
+        }
+    .languages h1{
+        color: #fff;
+        padding-top: 20px;
+        font-size:30px;
+    }
+    .languages .flex{
+        flex-wrap:wrap;
+        align-content: center;
+        justify-self: center;
+    }
+    
+    .languages .card-icon{
+    text-align: center;
+    margin: 20px;
+    transition:transform 0-2s ease-in;
+    padding: 20px;
+    
+    }
+    
+    .card-icon{
+        height:120px;
+        width: 120px;
+    }
+
+    .languages .card-icon:hover{
+        transform:translateY(-15px);
+    }
+    
+   .languages .flex{
+    flex-direction:row;
+    
+}
+
+/* Clients and contact form*/
+
+.clients{
+    height: 450px;
+    background-color: rgb(9, 86, 105);
+    color:#fff;
+    position: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.clients h1{
+    font-size: 30px;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.clients .grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-right: 30px;
+    justify-self: center;
+    align-items: center
+}
+
+.card-clients{
+    height:350px;
+    width: 220px;
+    padding-top: 10px;
+    
+}
+
+.card-clients p{
+    font-style: italic;
+}
+
+ .volvo-logo{
+    height:80px;
+    width: 80px;
+    margin: auto;
+    justify-self: center;
+    align-items: center
+}
+.clients .grid .card-clients:hover{
+    border-bottom: 2px #fff solid;
+}
+
+
+.contact{
+    height: 800px;
+    background-color: rgb(32, 39, 46);
+    color: #fff;
+    position: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+
+.contact_me{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    padding: 10px;
+  
+    }
+    
+    .contact_me .contact-form{
+        margin: 25px 10px;
+    }
+    
+    .contact_me input[type='text'],
+    .contact_me input[type='email'],
+    .contact_me input[type='number']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    }
+
+    .contact_me .contact-form-message input[type='text']{
+    border: 10px;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    font-size: 14px;
+    height: 200px;
+    
+    }
+    
+    .contact-form input:focus{
+        outline: none;
+    }
+    
+
+/* footer*/
+.footer{
+ height: 120px ;
+}
+
+.footer-list a{
+    display: inline-block;
+    padding:10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-list a:hover{
+    border-bottom: 2px #fff solid;
+}
+.footer .social a{
+    color: white;
+    padding: 7px;;
+    text-decoration: none;
+}
+.footer .social a:hover{    
+border-bottom: 2px #fff solid; 
+}
+
+.copy-right h1 {
+    font-size: 16px;
+}
+ 
+
+/* Blogpost page*/
+
+
+.blogpage{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+.blog-text{
+height: 400px;
+color:#fff
+}
+.blog-text h1 p{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+
+ .card-wrapper .grid-4{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-self: center;
+    align-items: center
+}
+
+.blogpage h1{
+    font-size: 30px;
+}
+
+.blog-text p{
+    margin: 16px 0;
+
+}
+
+
+.card-wrapper{
+    height: 800px;
+    margin:auto;
+    font-size: 0;
+    padding: 0;
+    width: 100‰;
+  }
+    
+
+      
+  .photo_card .grid-4{
+    width:500px;
+    height: 400px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  }
+  
+/* Portrait Page*/
+
+
+.portrait-gallery{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+.blog-text{
+height: 200px;
+color:#fff
+}
+
+.blog-text h1 p{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+
+
+.blog-header{
+    height: 500px;
+    color:#fff
+    }
+    
+    .blog-header h1 p{
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+
+
+ .card-wrapper .grid-4{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-self: center;
+    align-items: center
+}
+
+.portrait-gallery h1{
+    font-size: 30px;
+}
+
+
+
+
+.card-wrapper{
+    height: 800px;
+    margin:auto;
+    font-size: 0;
+    padding: 0;
+    width: 100‰;
+  }
+    
+
+      
+  .photo_card .grid-4{
+    width:500px;
+    height: 400px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  }
+    
+
+
+  .btn-portrait{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:rgb(5, 118, 126);
+    background-image: url(../images/Portrait/portrait1.jpg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 200px;
+    width:200px;
+    row-gap:10px;
+    padding: 20px;
+
+}
+
+
+.btn-bangladesh{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:rgb(5, 118, 126);
+    background-image: url(../images/Bangladesh/Bangladesh.jpg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 200px;
+    width:200px;
+    row-gap:10px;
+    padding: 20px;
+}
+
+
+
+
+.btn-italy{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:rgb(5, 118, 126);
+    background-image: url(../images/Italy/Italy14.jpg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 200px;
+    width:200px;
+    row-gap:10px;
+    padding: 20px;
+}
+
+.btn-norway{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:rgb(5, 118, 126);
+    background-image: url(../images/Norway/norway1.jpg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 200px;
+    width:200px;
+    row-gap:10px;
+    padding: 20px;
+}
+.btn-portrait:hover{
+    border-bottom: 2px #fff solid;
+   transform:translateY(-15px);
+ } 
+
+
+.btn-italy:hover{
+    border-bottom: 2px #fff solid;
+   transform:translateY(-15px);
+ } 
+
+
+.btn-norway:hover{
+    border-bottom: 2px #fff solid;
+   transform:translateY(-15px);
+ } 
+
+ .btn-bangladesh:hover{
+    border-bottom: 2px #fff solid;
+   transform:translateY(-15px);
+ } 
+
+
+
+  .portrait-gallery{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+
+.italy{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+.Bangladesh{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+.norway{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+.india{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+.france{
+    width: 100%;
+    max-width:100%;
+    margin:auto;
+    padding: 0;
+    background-color: #031e36;
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 800px;
+}
+
+

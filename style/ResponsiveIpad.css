@@ -1,0 +1,202 @@
+/* Tablets and under*/
+@media(max-width: 1000px){
+   
+    .navbar{
+        height: 150px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+      
+    }
+    
+    .navbar h1 .nav ul a{
+    font-size: 20px;
+    }
+    .navbar .logo{
+    font-size: 24px;
+    padding-top:10px;
+    }
+
+
+    .frontpage .grid,
+    .education-skills .grid,
+    .clients .grid,
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+   
+
+    .frontpage{
+        height: auto;
+        margin: 0 ;
+    }
+
+    .photo .portrait{
+        margin: auto;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+  
+  .frontpage-text{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  .education-skills{
+      margin-top:20px;
+        height: auto;
+        margin: 0 ;
+  }
+   
+  .education-text{
+      margin: 20px;
+      padding: 10px  0;
+  }
+
+  .skills-list .btn{
+      background-color: #054175;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+  }
+
+
+  .experience{
+    margin: 20px;
+    padding: 10px  0;
+  }
+/* Programing Language*/
+
+.languages{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.languages h1{
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+}
+
+.languages .container{
+    padding: 0;
+}
+
+.languages .card-icon{
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.languages .flex{
+    flex-direction:row;}
+
+/* Clients and contact form*/
+
+.clients{
+    height: auto;
+    margin:0;
+}
+
+.clients .grid .card-clients:hover{
+    border-bottom: 2px #fff solid;
+}
+  .card-clients{
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+.card-clients p{
+    font-style: italic;
+}
+
+.card-clients h3{
+font-weight:bolder ;
+font-size: 20px;
+}
+
+.card-clients .volvo-logo p{
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_me{
+  text-justify: center;
+  margin-top: 20px;
+  height:400px;
+  width:100‰;
+}
+
+
+.footer{
+        height:150px;
+        width:100‰;
+        
+    }
+    
+.footer .grid{
+  display: flex;
+  margin-left:20px ;
+    }
+
+.footer-list{
+margin-top: 20px;
+
+}
+.footer-list a{
+    font-size: 20px;
+}
+.footer .grid{
+    padding: 1rem;
+}
+
+
+/* Blog page*/
+ .blog-text{
+     height: 300px;
+ }
+
+
+
+.grid-4,
+.card-wrapper.grid-4{
+    display: flex;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+}
+
+.card-wrapper .grid-4{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+}
+
+.photo_card{
+    height: auto;
+    padding:0;
+    width: 100%;
+}
+.blog-header{
+    height: auto;
+    margin: 0;
+    width: 100%;
+
+}
+
+}
+
+
+

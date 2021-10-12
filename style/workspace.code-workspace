@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../PROJECTONE"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project4"
+	}
+}
